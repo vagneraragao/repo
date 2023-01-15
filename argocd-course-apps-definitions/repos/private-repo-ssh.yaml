@@ -7,8 +7,13 @@ metadata:
     argocd.argoproj.io/secret-type: repository
 stringData:
   type: git
-  url: git@github.com:mabusaa/argocd-example-apps-private.git
+  url: git@github.com:vagneraragao/argocd-example-apps.git
   sshPrivateKey: |
     -----BEGIN OPENSSH PRIVATE KEY-----
-     # key goes here  NOTE: dont push secrets into git, use sealed secrets as a solution for secrets in gitops.
+    b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAAAMwAAAAtzc2gtZW
+    QyNTUxOQAAACB4/kfkmqGtvz+02D11C2JR6zBQPAMNeTmuERJodu/crAAAAJiDZDlog2Q5
+    aAAAAAtzc2gtZWQyNTUxOQAAACB4/kfkmqGtvz+02D11C2JR6zBQPAMNeTmuERJodu/crA
+    AAAEDkbZx4+hRnR7e0af4C75DdjlwB986BdtOHyLavys+2CXj+R+Saoa2/P7TYPXULYlHr
+    MFA8Aw15Oa4REmh279ysAAAAEnZtYXJhZ2FvQGdtYWlsLmNvbQECAw==
     -----END OPENSSH PRIVATE KEY-----
+
