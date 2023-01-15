@@ -11,7 +11,7 @@ spec:
   source: 
     path: argocd-example-apps/kustomize-guestbook
     repoURL: "https://github.com/vagneraragao/repo.git"
-    targetRevision: master
+    targetRevision: main
     kustomize:
       namePrefix: staging-
       commonLabels:
