@@ -9,8 +9,8 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: kustomize-guestbook
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
+    path: argocd-example-apps/kustomize-guestbook
+    repoURL: "https://github.com/vagneraragao/repo.git"
     targetRevision: master
     kustomize:
       namePrefix: staging-
