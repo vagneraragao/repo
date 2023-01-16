@@ -10,7 +10,7 @@ spec:
   project: default
   source: 
     path: argocd-example-apps/sync-options/replace
-    repoURL: "https://github.com/vagneragao/repo.git"
+    repoURL: "https://github.com/vagneraragao/repo.git"
     targetRevision: main
     directory:
       recurse: true
@@ -18,7 +18,7 @@ spec:
     automated: {}
     syncOptions:
       - CreateNamespace=true
-      
+
       
 
     
