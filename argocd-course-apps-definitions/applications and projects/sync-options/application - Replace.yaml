@@ -9,16 +9,16 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: sync-options/replace
-    repoURL: "https://github.com/mabusaa/argocd-example-apps.git"
-    targetRevision: master
+    path: argocd-example-apps/sync-options/replace
+    repoURL: "https://github.com/vagneragao/repo.git"
+    targetRevision: main
     directory:
       recurse: true
   syncPolicy:
     automated: {}
     syncOptions:
       - CreateNamespace=true
-      - Replace=true
+      
       
 
     
