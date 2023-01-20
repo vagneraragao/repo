@@ -9,8 +9,8 @@ spec:
     server: "https://kubernetes.default.svc"
   project: default
   source: 
-    path: helm/webapp
-    repoURL: "https://github.com/mabusaa/argocd-course-webapp-config.git"
+    path: argocd-course-webapp-config/helm/webapp
+    repoURL: "https://github.com/vagneraragao/repo.git"
     targetRevision: main
   syncPolicy:
     automated: {}
