@@ -1,0 +1,37 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: echo "Hello world"
+      
+  dev:
+    runs-on: ubuntu-latest
+    environment: 
+      name: dev
+      url: varagao.com
+    needs: build
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: echo "Hello world DEV"
+      
+  homolog:
+    runs-on: ubuntu-latest
+    environment: 
+      name: hmg
+      url: varagao.com
+    needs: dev
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: echo "Hello world HMOLOG"      
